@@ -1,0 +1,2 @@
+default['authorization']['sudo']['groups'] = [ 'sysadmin', 'wheel', 'admin', 'admin2','admin3','admin4','admin5' ],
+default['authorization']['sudo']['users']  = [ 'jerry', 'greg','raj','gsk', 'hking', 'cldd']

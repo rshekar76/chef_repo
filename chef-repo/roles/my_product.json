@@ -1,0 +1,42 @@
+{
+  "name": "my_product",
+  "description": "This is my First Role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "myweblogic": {
+      "sudo": {
+        "groups": [
+          "oracleadmin",
+          "oracleuser",
+          "oracledba",
+          "oraclemanager"
+        ],
+        "users": [
+          "ashish",
+          "suresh",
+          "ganesh",
+          "ramesh",
+          "sagar",
+          "nilesh",
+          "Krishna",
+          "hari",
+          "oracle",
+          "peter",
+	  "pinky"
+        ]
+      }
+    }
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[myjava]",
+    "recipe[myoracle]",
+    "recipe[myweblogic]"
+  ],
+  "env_run_lists": {
+
+  }
+}
